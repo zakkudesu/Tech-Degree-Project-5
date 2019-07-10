@@ -386,4 +386,14 @@ img {
   height: 200px;
 }
 
+input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 0.5em 2em;
+  background-color: #e2dfdf;
+}
+
 /*# sourceMappingURL=styles.css.map */
