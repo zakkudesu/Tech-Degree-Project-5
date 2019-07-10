@@ -373,7 +373,7 @@ table {
   width: 80%;
   margin: 0.5em;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   margin: auto;
 }
 
