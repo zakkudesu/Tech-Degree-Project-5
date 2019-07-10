@@ -368,4 +368,22 @@ table {
   border-spacing: 0;
 }
 
+.flex-container {
+  display: flex;
+  width: 80%;
+  margin: 0.5em;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.flex-image {
+  flex: 1;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
 /*# sourceMappingURL=styles.css.map */
