@@ -388,12 +388,11 @@ img {
 
 input {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin: 2em auto;
   padding: 0.5em 2em;
-  background-color: #e2dfdf;
+  background-color: #fff;
+  border-radius: 0.3em;
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
