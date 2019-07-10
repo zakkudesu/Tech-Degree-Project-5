@@ -368,6 +368,10 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .flex-container {
   display: flex;
   width: 80%;
