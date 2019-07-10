@@ -1,0 +1,7 @@
+@mixin flex-create 
+{display: flex;
+width: 80%;
+margin: .5em;
+justify-content: space-evenly;
+flex-wrap: wrap;
+margin: auto;}

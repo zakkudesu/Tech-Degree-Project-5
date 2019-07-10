@@ -384,6 +384,12 @@ table {
 img {
   width: 200px;
   height: 200px;
+  padding: 1em;
+}
+@media only screen and (min-width: 576px) {
+  img {
+    padding: 0.3em;
+  }
 }
 
 input {
