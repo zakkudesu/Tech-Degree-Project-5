@@ -370,6 +370,7 @@ table {
 
 * {
   box-sizing: border-box;
+  cursor: default;
 }
 
 .flex-container {
@@ -408,7 +409,7 @@ input {
 }
 
 img.mfp-img {
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .mfp-counter {
@@ -420,25 +421,25 @@ img.mfp-img {
 }
 
 .mfp-title {
-  font-family: sans-serif;
-  max-width: 55%;
-  padding-right: 0;
-  margin: 0 auto;
   text-align: center;
+  font-family: monospace;
+  max-width: 65%;
+  margin: 0 auto;
+  padding-right: 0;
 }
 
 .mfp-bg {
-  background: #363535;
-  opacity: 0.95;
+  background: #2e2e2e;
+  opacity: 0.99;
   height: 100%;
 }
 
 .mfp-bottom-bar {
-  padding-top: 30px;
+  padding-top: 2em;
 }
 
 .mfp-title {
-  color: #c5c2c2;
+  color: #d8d7d7;
 }
 
 /*# sourceMappingURL=styles.css.map */

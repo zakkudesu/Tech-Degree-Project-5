@@ -10,3 +10,4 @@ $('.flex-container').magnificPopup({
     showCloseBtn: false,  
 
   });
+
