@@ -8,9 +8,7 @@ $('.flex-container').magnificPopup({
         navigateByImgClick: true,
       },
     showCloseBtn: false,  
-
   }); 
-
 
 // search filter 
   $(document).ready(function(){
@@ -18,8 +16,16 @@ $('.flex-container').magnificPopup({
       let photoSearch = $(this).val().toLowerCase();
       
        console.log(photoSearch);
-
         
+       /* Brainstorming
+    
+       let titleContent = a title="text".toLowerCase()
+       loop through titleContent
+
+       if photoSearch contains titleContent {
+            .toggle(!titleContent)
+       }
+       */
     });
   });
 
