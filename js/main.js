@@ -19,10 +19,11 @@ $('.flex-container').magnificPopup({
         
        /* Brainstorming
     
-       let titleContent = a title="text".toLowerCase()
-       loop through titleContent
+       1. let titleContent = [a:title="text"].toLowerCase()
 
-       if photoSearch contains titleContent {
+       2. loop through each image titleContent
+
+       3. if photoSearch contains any titleContent {
             .toggle(!titleContent)
        }
        */
