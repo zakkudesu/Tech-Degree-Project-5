@@ -1,0 +1,41 @@
+//****************************
+// Changes to Magnific Plugin
+//****************************
+
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: default;
+  }
+
+img.mfp-img {
+    max-width: 80%;
+  }
+
+.mfp-counter {
+    display: none;
+  }
+  
+.mfp-figure:after {
+    display: none;
+  }
+  
+.mfp-title {
+    font-family: sans-serif;
+    max-width: 55%;
+    padding-right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.mfp-bg {
+    background: #363535;
+    opacity: 0.95;
+    height: 100%;
+  }
+  
+.mfp-bottom-bar {
+    padding-top: 30px;
+  }
+  
+  .mfp-title{
+    color: rgb(197, 194, 194);
+  }
