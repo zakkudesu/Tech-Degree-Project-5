@@ -9,5 +9,16 @@ $('.flex-container').magnificPopup({
       },
     showCloseBtn: false,  
 
-  });
+  }); 
 
+
+// search filter 
+  $(document).ready(function(){
+    $(".search-field").on("keyup", function() {
+      let photoSearch = $(this).val().toLowerCase();
+      
+        console.log(photoSearch);
+            
+        
+    });
+  });
