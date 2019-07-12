@@ -21,15 +21,27 @@ $('.flex-container').magnificPopup({
         console.log($(this));           
         });
         
-       /* Brainstorming Solution
-    
-       1. let titleContent = document.getElementByTagName("A").querySelectorAll("a[title]")
+    });
+  });
 
-       2. Createa function that  
-            loops through each image titleContent
+      /* Brainstorming Solution
+    
+       1. let titleContent = document.getElementByTagName("a").querySelectorAll("a[title]")
+
+       2 Create function that  
+            loops through titleContent
+
+              jQuery:
                 $('a').each(function(index){     
                 console.log($(this));           
                 });
+
+              JS:
+                for (let i = 0; i < a.length ; i ++) {
+                  
+
+                }
+
 
        and
        
@@ -37,5 +49,3 @@ $('.flex-container').magnificPopup({
                 .toggle(!titleContent)
                 }
        */
-    });
-  });
