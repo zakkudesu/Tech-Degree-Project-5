@@ -17,8 +17,10 @@ $('.flex-container').magnificPopup({
     $(".search-field").on("keyup", function() {
       let photoSearch = $(this).val().toLowerCase();
       
-        console.log(photoSearch);
-            
+       console.log(photoSearch);
+
+       
         
     });
   });
+
