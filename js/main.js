@@ -16,17 +16,23 @@ $('.flex-container').magnificPopup({
       let photoSearch = $(this).val().toLowerCase();
       
        console.log(photoSearch);
+
+       $('a').each(function(index){     
+        console.log($(this));           
+        });
         
-       /* Brainstorming
+       /* Brainstorming Solution
     
        1. let titleContent = [a:title="text"].toLowerCase()
 
-       2. loop through each image titleContent
+       2. loop through each image titleContent (outerHTML ???)
+            $('a').each(function(index){     
+            console.log($(this));           
+            });
 
        3. if photoSearch contains any titleContent {
-            .toggle(!titleContent)
+            .toggle(!titleContent outerHTML ???)
        }
        */
     });
   });
-
