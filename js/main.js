@@ -12,9 +12,7 @@ $('.flex-container').magnificPopup({
 
   
 
-// let search = document.getElementByID(searchInput);
-
-// search.addEventListener('keyup', photoFilter);
+// search filter
 
 
 $(document).ready(function(){
@@ -22,8 +20,7 @@ $(document).ready(function(){
 
   let findPhoto = document.getElementById('searchInput').value.toLowerCase();
   let photo = document.querySelectorAll('.flex-item');
-
-       
+   
     for (let i = 0; i < photo.length ; i++) {
         let link = document.getElementsByTagName('a');
               
@@ -38,19 +35,4 @@ $(document).ready(function(){
       }
     }
   });
-
-  // photoFilter();
-
-  // // search filter test in jQuery
-  // $(document).ready(function(){
-  //   $(".search-field").on("keyup", function() {
-  //     let photoSearch = $(this).val().toLowerCase();
-      
-  //      console.log(photoSearch);
-
-  //      $('a').each(function(index){     
-  //       console.log($(this));           
-  //       });
-        
-  //   });
 }); 
