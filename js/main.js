@@ -12,13 +12,15 @@ $('.flex-container').magnificPopup({
 
   
 
-let search = document.getElementByID(searchInput);
+// let search = document.getElementByID(searchInput);
 
-search.addEventListener('keyup', photoFilter);
+// search.addEventListener('keyup', photoFilter);
 
-function photoFilter(){
 
-  let findPhoto = document.getElementById('searchInput');
+$(document).ready(function(){
+  $(".search-field").on("keyup", function() {
+
+  let findPhoto = document.getElementById('searchInput').value.toLowerCase();
   let photo = document.querySelectorAll('.flex-item');
 
        
@@ -28,14 +30,14 @@ function photoFilter(){
     for (let i = 0; i < link.length; i++) {
          let linkSearch = link[i].getAttribute('title');
 
-    if(linkSearch.toLowerCase().indexOf(search) > -1){
+    if(linkSearch.toLowerCase().indexOf(findPhoto) > -1){
             photo[i].style.display= 'block';
        } else {
             photo[i].style.display = 'none';
         }
       }
     }
-  }
+  });
 
   // photoFilter();
 
@@ -51,5 +53,4 @@ function photoFilter(){
   //       });
         
   //   });
-  // });
-
+}); 
