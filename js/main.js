@@ -22,10 +22,10 @@ $(document).ready(function(){
   const photo = document.querySelectorAll('.flex-item');
    
     for (let i = 0; i < photo.length ; i++) {
-        let link = document.getElementsByTagName('a');
+        const link = document.getElementsByTagName('a');
               
     for (let i = 0; i < link.length; i++) {
-         let linkSearch = link[i].getAttribute('title');
+        const linkSearch = link[i].getAttribute('title');
 
     if(linkSearch.toLowerCase().indexOf(findPhoto) > -1){
             photo[i].style.display= 'block';
