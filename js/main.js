@@ -18,8 +18,8 @@ $('.flex-container').magnificPopup({
 $(document).ready(function(){
   $(".search-field").on("keyup", function() {
 
-  let findPhoto = document.getElementById('searchInput').value.toLowerCase();
-  let photo = document.querySelectorAll('.flex-item');
+  const findPhoto = document.getElementById('searchInput').value.toLowerCase();
+  const photo = document.querySelectorAll('.flex-item');
    
     for (let i = 0; i < photo.length ; i++) {
         let link = document.getElementsByTagName('a');
