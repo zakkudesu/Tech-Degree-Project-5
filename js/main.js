@@ -10,42 +10,46 @@ $('.flex-container').magnificPopup({
     showCloseBtn: false,  
   }); 
 
-// search filter 
-  $(document).ready(function(){
-    $(".search-field").on("keyup", function() {
-      let photoSearch = $(this).val().toLowerCase();
-      
-       console.log(photoSearch);
+  
 
-       $('a').each(function(index){     
-        console.log($(this));           
-        });
-        
-    });
-  });
+let search = document.getElementByID(searchInput);
 
-      /* Brainstorming Solution
-    
-       1. let titleContent = document.getElementByTagName("a").querySelectorAll("a[title]")
+search.addEventListener('keyup', photoFilter);
 
-       2 Create function that  
-            loops through titleContent
+function photoFilter(){
 
-              jQuery:
-                $('a').each(function(index){     
-                console.log($(this));           
-                });
+  let findPhoto = document.getElementById('searchInput');
+  let photo = document.querySelectorAll('.flex-item');
 
-              JS:
-                for (let i = 0; i < a.length ; i ++) {
-                  
-
-                }
-
-
-       and
        
-                if photoSearch contains any titleContent {
-                .toggle(!titleContent)
-                }
-       */
+    for (let i = 0; i < photo.length ; i++) {
+        let link = document.getElementsByTagName('a');
+              
+    for (let i = 0; i < link.length; i++) {
+         let linkSearch = link[i].getAttribute('title');
+
+    if(linkSearch.toLowerCase().indexOf(search) > -1){
+            photo[i].style.display= 'block';
+       } else {
+            photo[i].style.display = 'none';
+        }
+      }
+    }
+  }
+
+  // photoFilter();
+
+  // // search filter test in jQuery
+  // $(document).ready(function(){
+  //   $(".search-field").on("keyup", function() {
+  //     let photoSearch = $(this).val().toLowerCase();
+      
+  //      console.log(photoSearch);
+
+  //      $('a').each(function(index){     
+  //       console.log($(this));           
+  //       });
+        
+  //   });
+  // });
+
