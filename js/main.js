@@ -7,7 +7,7 @@ $('.flex-container').magnificPopup({
         enabled: true,
         navigateByImgClick: true,
       },
-    showCloseBtn: false,  
+    // showCloseBtn: false,  
   }); 
 
   
