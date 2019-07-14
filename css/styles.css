@@ -393,6 +393,10 @@ img {
   }
 }
 
+a img:hover {
+  cursor: pointer;
+}
+
 input {
   display: block;
   margin: 1em auto;
