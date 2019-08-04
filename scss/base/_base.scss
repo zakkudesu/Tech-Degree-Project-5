@@ -7,8 +7,6 @@
     cursor: default;
   }
   
-
-.flex-container{
+  .flex-container {
     @include flex-create;
 }
-
